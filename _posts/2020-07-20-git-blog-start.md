@@ -1,5 +1,5 @@
 ---
-title: GitHub 블로그 만들기 (chirpy 테마)
+title: GitHub 블로그 만들기 - 테마적용 (chirpy 테마)
 author: Sangik-Jo
 date: 2020-07-20 10:24:00 +0900
 categories: [GitHub Blog]
@@ -7,13 +7,13 @@ tags: [Blog]
 math: true
 ---
 
-
 ## **개요**
 ---
 > 블로그를 만들며 막혔던 부분들을 정리하기 위해 글을 작성합니다 ^^
 
 ## **참고 사이트**
-
++ tzinfo 관련 gemfile : <https://honsal.tistory.com/entry/Resolve-tzinfo-error-in-ruby-on-rails-2014-05-26>
++ 테마 적용 관련 : <https://theorydb.github.io/envops/2019/05/03/envops-blog-github-pages-jekyll/>
 
 ## **프로그램 설치 사이트**
 ---
@@ -38,10 +38,10 @@ math: true
 가장먼저 GitHub에서 블로그를 만드려면 GitHub에 가입을 해야겠죠?^^  
 
 **GitHub에 접속 후 `Sign Up` 버튼을 클릭하여 회원가입을 합니다.**  
-![GitHub_Blog_Start_1-1](/assets/img/pots/2020-07-20-github-blog/github-blog-start-1-1.png)
+![GitHub_Blog_Start_1-1](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-1-1.png)
 
 **Git에 접속 후 `Download` 버튼을 클릭하여 Git을 다운받습니다.**  
-![GitHub_Blog_Start_1-2](/assets/img/pots/2020-07-20-github-blog/github-blog-start-1-2.png)
+![GitHub_Blog_Start_1-2](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-1-2.png)
 
 ## **마음에 드는 jekyll 테마를 고르기**
 ---
@@ -66,24 +66,24 @@ math: true
 ---
 ### **1. 원하는 테마 저장소 가져오기**
 원하는 테마의 GitHub 페이지로 가서 Fork 버튼을 눌러주면 자신의 repository에 복사? 됩니다.  
-![GitHub_Blog_Start_2-1](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-1.png)
+![GitHub_Blog_Start_2-1](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-1.png)
   
 ### **2. 테마 저장소 이름 바꾸기**
 복사된 저장소를 클릭 > `Setting`버튼을 클릭 > `저장소 이름 변경`  
 **저장소의 이름은 매우 중요하니 반드시 규칙을 따라 바꿔주세요.**  
 **저장소 이름 : [User_Name].github.io**  
 
-![GitHub_Blog_Start_2-2](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-2.png)
+![GitHub_Blog_Start_2-2](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-2.png)
   
 ### **3. 저장소의 메인 페이지에서 저장소의 주소 복사**  
 
-![GitHub_Blog_Start_2-3](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-3.png)  
+![GitHub_Blog_Start_2-3](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-3.png)  
   
 ### **4. 블로그를 관리할 폴더 설정**
 블로그에대한 파일들을 관리할 폴더를 정하고 해당폴더에 오른쪽 마우스를 클릭 합니다.  
 Git을 설치한 후 표시되는 `Git Bash Here` 을 클릭합니다.  
  
-![GitHub_Blog_Start_2-4](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-4.png)
+![GitHub_Blog_Start_2-4](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-4.png)
 
 **GitBash가 실행 되었다면 GitHub 아이디를 설정해줍니다.**  
 **마지막으로 잘 설정되었는지 반드시 확인해야되겠죠?^^**  
@@ -92,7 +92,7 @@ $ git config --global user.name [User_Name]
 $ git config --global user.email [User_ID]@naver.com
 $ git config --global --list
 ```
-![GitHub_Blog_Start_2-5](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-5.png)
+![GitHub_Blog_Start_2-5](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-5.png)
 
 ### **5. 저장소 주소를 이용한 파일 복사**
 설정이 모두 완료 되었다면 복사해둔 저장소 주소를 이용해 파일을 복사해줍니다.  
@@ -100,7 +100,7 @@ $ git config --global --list
 Git Bash에서 붙여넣기 커맨드는 Shif+Ins 입니다~^^  
 `$ git clone 복사한 주소`
 
-![GitHub_Blog_Start_2-6](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-6.png)
+![GitHub_Blog_Start_2-6](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-6.png)
 
 ### **6. [GemFile] 파일 수정**
 GemFile을 메모장으로 열어 해당 내용을 추가해 줍니다.  
@@ -110,7 +110,7 @@ time-zone(시간)에 관한 내용 같은데 자세한 내용은 더 공부를 �
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 ```
-![GitHub_Blog_Start_2-7](/assets/img/pots/2020-07-20-github-blog/github-blog-start-2-7.png)
+![GitHub_Blog_Start_2-7](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-2-7.png)
 
 ## Ruby 다운 및 설정
 
@@ -120,14 +120,14 @@ Ruby+Devkit 2.6.6-1 (x64) 버전을 기준으로 하였습니다.
 모두 기본 값으로 설치 후 마지막의 커맨트 창(cmd창)은 닫아줍니다.  
 마지막 창은 닫아주어도 된다고 하는데 무엇인지 몰라 궁금하네요 ㅠㅠ  
 
-![GitHub_Blog_Start_3-1](/assets/img/pots/2020-07-20-github-blog/github-blog-start-3-1.png)
+![GitHub_Blog_Start_3-1](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-3-1.png)
 
 ### **2. Ruby Command창을 이용한 gem 설치**
 gem에 대해 간단히 설명하자면 `잼 = 라이브러리`라고 합니다.  
 즉, 필요한 기능이 있을 때 추가해서 사용하면 된다는 뜻 입니다.  
 그림과 같은 루비 프로그램을 실행해 줍니다.  
 
-![GitHub_Blog_Start_3-2](/assets/img/pots/2020-07-20-github-blog/github-blog-start-3-2.png)
+![GitHub_Blog_Start_3-2](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-3-2.png)
 
 **이제 ``로컬 서버를 돌리기위해 gem을 다운``받아야 합니다.**  
 **매우 중요한 부분이겠죠?!**  
@@ -137,7 +137,7 @@ gem에 대해 간단히 설명하자면 `잼 = 라이브러리`라고 합니다.
 ```
 gem install jekyll bundler tzinfo-data
 ```
-<img src="/assets/img/pots/2020-07-20-github-blog/github-blog-start-3-3.png" width="700px">
+<img src="/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-3-3.png" width="700px">
 
 `두번째 명령어는 필요한 gem을 알려주면 해당 gem을 다운`받기위한 명령어 입니다.  
 로컬 서버를 열어주는 명령어인 `jekyll serve` 를 커맨드 창에 입력하면  
@@ -149,13 +149,13 @@ jekyll serve
 gem install [필요한 gem의 이름]
 ```
 
-<img src="/assets/img/pots/2020-07-20-github-blog/github-blog-start-3-4.png" width="700px">
+<img src="/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-3-4.png" width="700px">
 
 필요한 gem들이 모두 다운로드 완료 되면 `jekyll serve`를 쳤을 때 아래 그림과 같이 나오게 됩니다.  
 여기서 [localhost:4000](localhost:4000){:target="_blank"}으로 들어가게 되면 로컬 서버로 chirpy테마의 블로그가 개설된 것을 확인 할 수 있습니다.  
 **!하지만 이렇게 했을 때는 카테고리기능이 작동하지 않습니다.**  
 
-![GitHub_Blog_Start_3-5](/assets/img/pots/2020-07-20-github-blog/github-blog-start-3-5.png)
+![GitHub_Blog_Start_3-5](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-3-5.png)
 
 
 ## **로컬 서버를 이용한 블로그 테스트**
@@ -167,7 +167,7 @@ gem install [필요한 gem의 이름]
 ```
 $ bash tools/run.sh
 ```
-![GitHub_Blog_Start_4-1](/assets/img/pots/2020-07-20-github-blog/github-blog-start-4-1.png)
+![GitHub_Blog_Start_4-1](/assets/img/pots/2020-07-20-github-blog-start/github-blog-start-4-1.png)
 
 ## **GitHub블로그 업데이트**
 로컬 서버는 수정한 사항들을 확인하고 올바르게 작동 하는지 확인하기 위함 입니다.  
