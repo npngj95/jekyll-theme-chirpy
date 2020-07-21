@@ -1,10 +1,13 @@
 ---
 title: GitHub 블로그 만들기 - 글 작성법
 author: Sangik-Jo
-date: 2020-07-21 10:20:00 +0900
-categories: [GitHub Blog]
-tags: [Blog]
+date: '2020-07-21 10:20:00 +0900'
+categories:
+  - GitHub Blog
+tags:
+  - Blog
 math: true
+published: false
 ---
 
 
@@ -57,7 +60,7 @@ math: true
   
 ## **Markdown 주요 문법**
 ---
-+ ### 헤더(h1) : 제목, 문단 구분  
++ ### **헤더(h1) : 제목, 문단 구분**  
   
 해당 문법을 쓰면 Chirpy 테마에서는 글 오른쪽에 헤더가 표시되고  
 표시되는 헤더를 누르게되면 해당 헤더의 위치로 가게 되어있습니다.  
