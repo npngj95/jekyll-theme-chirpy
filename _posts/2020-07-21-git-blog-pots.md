@@ -1,13 +1,10 @@
 ---
 title: GitHub 블로그 만들기 - 글 작성법
 author: Sangik-Jo
-date: '2020-07-21 10:20:00 +0900'
-categories:
-  - GitHub Blog
-tags:
-  - Blog
+date: 2020-07-21 10:20:00 +0900
+categories: [GitHub Blog]
+tags: [Blog]
 math: true
-published: false
 ---
 
 
